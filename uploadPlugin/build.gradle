@@ -1,0 +1,46 @@
+plugins {
+    id 'groovy'
+    id 'maven'
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'          // 注意要应用Kotlin 插件
+}
+
+dependencies {
+
+    //gradle sdk
+    implementation gradleApi()
+    //groovy sdk
+    implementation localGroovy()
+
+    implementation "com.android.tools.build:gradle:$build_gradle_version"
+
+    implementation "com.squareup.okhttp3:okhttp:4.9.0"
+
+    implementation "net.glxn.qrgen:javase:2.0"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/kotlin']
+            srcDirs = ['src/main/java']
+        }
+    }
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //设置插件的GAV参数
+            pom.groupId = 'com.eegets.plugin'
+            pom.artifactId = 'upload'
+            pom.version = '1.0.0'
+
+            //文件发布到下面目录
+            repository(url: uri('../plugin'))
+        }
+    }
+}

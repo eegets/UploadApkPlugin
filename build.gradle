@@ -1,0 +1,38 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    ext.build_gradle_version = '4.1.2'
+    ext.kotlin_version = '1.4.10'
+
+    repositories {
+        google()
+        jcenter()
+
+        maven {
+            url uri("./plugin")
+        }
+
+        // gradle plugins 插件maven
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$build_gradle_version"
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // 组件注册插件，此处的包名要和build.gradle中 'uploadArchives' 配置信息下的配置一致
+        classpath 'com.eegets.plugin:upload:1.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
