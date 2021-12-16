@@ -37,11 +37,11 @@ object FeishuExt {
      * 第三步 发送消息到飞书智能助手
      * https://open.feishu.cn/document/ukTMukTMukTM/ucTM5YjL3ETO24yNxkjN?lang=zh-CN#4996824a
      */
-    fun pushMessageToFeishuHook(url: String, desc: String) {
+    fun pushMessageToFeishuHook(pgyerInfoBean: PgyerInfoBean) {
 
-        val feishuMsgBean = JsonOutput.toJson(addRequestBean(url, desc))
+        val feishuMsgBean = JsonOutput.toJson(addRequestBean(pgyerInfoBean))
 
-        println(LOG_UPLOAD_TASK + "pushMessageToFeishuHook url: " + url + "; desc: " + desc + "; feishuMsgBean: " + feishuMsgBean)
+        println(LOG_UPLOAD_TASK + "pushMessageToFeishuHook pgyerInfoBean: $pgyerInfoBean; feishuMsgBean: $feishuMsgBean")
 
         val requestBody: RequestBody = feishuMsgBean.toRequestBody("application/json".toMediaTypeOrNull())
 
@@ -53,21 +53,22 @@ object FeishuExt {
         val response = OkHttpClient().newCall(request).execute()
         val responseMsg = response.body?.string()
 
-        println("$LOG_UPLOAD_TASK pushMessageToFeishuHook upload success path: $responseMsg; url: $url")
+        println("$LOG_UPLOAD_TASK pushMessageToFeishuHook upload success path: $responseMsg")
     }
 }
 
-private fun addRequestBean(url: String, desc: String? = "暂无"): FeishuMsgBean {
+private fun addRequestBean(pgyerInfoBean: PgyerInfoBean): FeishuMsgBean {
 
     val contentXList = mutableListOf<List<FeishuMsgBean.ContentX>>().apply {
-         mutableListOf<FeishuMsgBean.ContentX>().apply {
-            add(FeishuMsgBean.ContentX(tag = "text", text = "更新内容：\n$desc"))
+
+        mutableListOf<FeishuMsgBean.ContentX>().apply {
+            add(FeishuMsgBean.ContentX(tag = "text", text = "更新内容：\n${pgyerInfoBean.data.buildUpdateDescription}"))
         }.also {
             this.add(it)
         }
 
         mutableListOf<FeishuMsgBean.ContentX>().apply {
-            add(FeishuMsgBean.ContentX(tag = "a", text = "\n下载安装包", href = url))
+            add(FeishuMsgBean.ContentX(tag = "a", text = "\n点击下载安装包", href = "https://www.pgyer.com/${pgyerInfoBean.data.buildShortcutUrl}"))
         }.also {
             this.add(it)
         }
@@ -78,7 +79,7 @@ private fun addRequestBean(url: String, desc: String? = "暂无"): FeishuMsgBean
                     post = FeishuMsgBean.Post(
                             zh_cn = FeishuMsgBean.ZhCn(
                                     content = contentXList,
-                                    title = "最新开发测试包"
+                                    title = "最新开发测试包「${pgyerInfoBean.data.buildName}（V${pgyerInfoBean.data.buildVersion}）」"
                             )
                     )
             ))

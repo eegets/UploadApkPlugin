@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.glxn.qrgen:javase:2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.glxn.qrgen/javase/2.0/abbdc2410328feeaee6f65cb5dcaaecc04dc12a7/javase-2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/net.glxn.qrgen/javase/2.0/3d4df68813484cd8a60cc7487b63f77b73ebd5f7/javase-2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -25,6 +25,6 @@ data class PgyerInfoBean(
             val buildUpdateDescription: String,
             val buildUpdated: String,
             val buildVersion: String,
-            val buildVersionNo: String
+            val buildVersionNo: String,
     )
 }

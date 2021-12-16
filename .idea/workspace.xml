@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e62f9be-48bb-47fd-b452-fab05aa2cc64" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets/GsonExt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.0/upload-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.0/upload-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.0/upload-1.0.0.jar.md5" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.0/upload-1.0.0.jar.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.0/upload-1.0.0.jar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.0/upload-1.0.0.jar.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/CustomPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/CustomPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/task/UploadTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/task/UploadTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/utils/PgyerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/utils/PgyerUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets/FeishuExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets/FeishuExt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets/PgyerInfoBean.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets/PgyerInfoBean.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/uploadPlugin">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="UploadApkPlugin" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="UploadApkPlugin" type="f1a62948:ProjectNode" />
+                <item name="uploadPlugin" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="UploadApkPlugin" type="f1a62948:ProjectNode" />
+                <item name="uploadPlugin" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="UploadApkPlugin" type="f1a62948:ProjectNode" />
+                <item name="uploadPlugin" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="upload" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22GzuW7TGh4ZANlDjoikfzYauyG" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/uploadPlugin/src/main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.eegets.plugin" />
+      <recent name="com.eegets.plugin.task" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets" />
+      <recent name="$PROJECT_DIR$/uploadPlugin" />
+      <recent name="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/utils" />
+      <recent name="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/bean" />
+      <recent name="$PROJECT_DIR$/uploadPlugin/src/main/resources/META-INF/gradle-plugins" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.UploadApkPlugin:uploadPlugin [uploadArchives]">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="UploadApkPlugin.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UploadApkPlugin:uploadPlugin [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/uploadPlugin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="uploadArchives" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.UploadApkPlugin:uploadPlugin [uploadArchives]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e62f9be-48bb-47fd-b452-fab05aa2cc64" name="Default Changelist" comment="" />
+      <created>1639478934316</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639478934316</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="138" y="99" key="DiffContextDialog" timestamp="1639647523197">
+      <screen x="0" y="25" width="1378" height="875" />
+    </state>
+    <state x="138" y="99" key="DiffContextDialog/0.25.1378.875/-2560.-420.2560.1415@0.25.1378.875" timestamp="1639647523197" />
+    <state width="2516" height="343" key="GridCell.Tab.0.bottom" timestamp="1639648056465">
+      <screen x="-2560" y="-420" width="2560" height="1415" />
+    </state>
+    <state width="2516" height="343" key="GridCell.Tab.0.bottom/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639648056465" />
+    <state width="2516" height="343" key="GridCell.Tab.0.center" timestamp="1639648056464">
+      <screen x="-2560" y="-420" width="2560" height="1415" />
+    </state>
+    <state width="2516" height="343" key="GridCell.Tab.0.center/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639648056464" />
+    <state width="2516" height="343" key="GridCell.Tab.0.left" timestamp="1639648056463">
+      <screen x="-2560" y="-420" width="2560" height="1415" />
+    </state>
+    <state width="2516" height="343" key="GridCell.Tab.0.left/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639648056463" />
+    <state width="2516" height="343" key="GridCell.Tab.0.right" timestamp="1639648056464">
+      <screen x="-2560" y="-420" width="2560" height="1415" />
+    </state>
+    <state width="2516" height="343" key="GridCell.Tab.0.right/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639648056464" />
+    <state x="393" y="169" key="RollbackChangesDialog" timestamp="1639647524327">
+      <screen x="0" y="25" width="1378" height="875" />
+    </state>
+    <state x="393" y="169" key="RollbackChangesDialog/0.25.1378.875/-2560.-420.2560.1415@0.25.1378.875" timestamp="1639647524327" />
+    <state x="-1496" y="180" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1639535526032">
+      <screen x="-2560" y="-420" width="2560" height="1415" />
+    </state>
+    <state x="-1496" y="180" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639535526032" />
+  </component>
+</project>

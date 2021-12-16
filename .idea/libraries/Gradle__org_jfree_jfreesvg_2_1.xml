@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jfree:jfreesvg:2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.jfree/jfreesvg/2.1/206679ef09f39b57b2f73dc79bd09785efe007af/jfreesvg-2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.jfree/jfreesvg/2.1/4ae9f2160f46f07593dfb8a94965c8b261de6758/jfreesvg-2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

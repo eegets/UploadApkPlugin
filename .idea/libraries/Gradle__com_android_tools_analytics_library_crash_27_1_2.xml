@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.tools.analytics-library:crash:27.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/27.1.2/7654ab27a539856eaaf729d73f8ea4e8a02f6450/crash-27.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/27.1.2/8733680921f6611779aa1849dcb9506541453959/crash-27.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

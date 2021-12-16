@@ -4,6 +4,7 @@ import com.android.build.gradle.api.ApplicationVariant;
 import com.android.build.gradle.api.BaseVariant;
 import com.android.build.gradle.api.BaseVariantOutput;
 import com.eegets.FeishuExt;
+import com.eegets.PgyerInfoBean;
 import com.eegets.plugin.utils.FeishuUtils;
 import com.eegets.plugin.utils.PgyerUtils;
 
@@ -20,6 +21,7 @@ import java.util.Objects;
  */
 public class UploadTask extends DefaultTask {
     private String LOG_UPLOAD_TASK = "TestUploadTask + ";
+    private static final String PGYER_URL = "https://www.pgyer.com/";
 
     private BaseVariant variant;
     private Project project;
@@ -47,16 +49,17 @@ public class UploadTask extends DefaultTask {
                 System.out.println(LOG_UPLOAD_TASK + apkDir.getAbsolutePath());
                 File filePath = findApkFile(apkDir);
 
+                //获取token
+//                feishu.requestToken();
+                //上传图片，并获取生成的imageKey
+//                feishu.requestFeishuImageKey(PgyerUtils.saveImagePath);
+
                 //获取到文件，执行上传
-                pgyer.uploadApkPgyer(filePath.getAbsoluteFile(), "TestApk.apk");
+                pgyer.uploadApkPgyer(filePath.getAbsoluteFile(), "TestApk.apk", "");
 
-                pgyer.getMessage();
+                PgyerInfoBean pgyerInfoBean = pgyer.getMessage();
 
-                feishu.requestFeishuImageKey(PgyerUtils.saveImagePath);
-
-                feishu.requestToken();
-
-                FeishuExt.INSTANCE.pushMessageToFeishuHook("", "");
+                FeishuExt.INSTANCE.pushMessageToFeishuHook(pgyerInfoBean);
 
             }
         }
@@ -77,12 +80,12 @@ public class UploadTask extends DefaultTask {
                 }
             }
         }
-
         if (apk == null || !apk.exists()) {
             System.out.println(LOG_UPLOAD_TASK + "apkDir: " + apkDir + "; apkDir is null or no exists");
         } else {
             System.out.println(LOG_UPLOAD_TASK + "final upload apk path: " + apk.getAbsolutePath());
         }
+
         return apk;
     }
 

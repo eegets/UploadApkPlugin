@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
 }
 /**
- * 刺齿的包名要和 'UploadPlugin'下'src/resources/META-INF/gradle-plugins/下的包名一致'
+ * 此处的包名要和 'UploadPlugin'下'src/resources/META-INF/gradle-plugins/下的包名一致'
  */
 apply plugin: 'com.eegets.plugin'
 

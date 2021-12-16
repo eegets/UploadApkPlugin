@@ -1,5 +1,10 @@
 package com.eegets.plugin.utils;
 
+import com.eegets.GsonUtls;
+import com.eegets.PgyerInfoBean;
+
+import org.apache.http.util.TextUtils;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -31,12 +36,12 @@ public class PgyerUtils {
 
     public static final String saveImagePath = "/Users/wangkai/FlutterProjects/TestGroovyPlugin/app/build/outputs/apk/release/ImageRQ.jpg";
 
-    public String uploadApkPgyer(File apkPath, String fileName) {
-        System.out.println(LOG_UPLOAD_TASK + " apkPath: " + apkPath + "; fileName: " + fileName);
+    public String uploadApkPgyer(File apkPath, String fileName, String shortName) {
+        System.out.println(LOG_UPLOAD_TASK + " apkPath: " + apkPath + "; fileName: " + fileName + "; shortName: " + shortName);
 
         RequestBody fileBody = RequestBody.create(MediaType.parse("multipart/form-data'"), apkPath);
 
-        MultipartBody requestBody = addRequestBody()
+        MultipartBody requestBody = addRequestBody("")
                 .addFormDataPart("file", fileName, fileBody)
                 .build();
 
@@ -53,7 +58,7 @@ public class PgyerUtils {
 
             System.out.println(LOG_UPLOAD_TASK + " upload success path: " + responseMsg + "; apkPath: " + apkPath);
 
-            FileUtils.saveToLocal("https://www.pgyer.com/N0tK", saveImagePath);
+            FileUtils.saveToLocal("https://www.pgyer.com/" + shortName, saveImagePath);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -61,9 +66,11 @@ public class PgyerUtils {
         return responseMsg;
     }
 
-    public String getMessage() {
+    public PgyerInfoBean getMessage() {
 
-        MultipartBody requestBody = addRequestBody()
+        PgyerInfoBean pgyerInfoBean = null;
+
+        MultipartBody requestBody = addRequestBody("")
                 .build();
 
         Request request = new Request.Builder()
@@ -75,21 +82,25 @@ public class PgyerUtils {
             Response response = new OkHttpClient().newCall(request).execute();
 
             String responseMsg = response.body().string();
+            pgyerInfoBean = GsonUtls.INSTANCE.getGson().fromJson(responseMsg, PgyerInfoBean.class);
 
-            System.out.println(LOG_UPLOAD_TASK + " upload success path: " + responseMsg);
+            System.out.println(LOG_UPLOAD_TASK + " upload success path: " + responseMsg + "; pgyerInfoBean: " + pgyerInfoBean);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return "";
+        return pgyerInfoBean;
     }
 
-    private MultipartBody.Builder addRequestBody() {
+    private MultipartBody.Builder addRequestBody(String description) {
+        if (TextUtils.isEmpty(description)) {
+            description = "更新内容正在开发中，敬请期待...";
+        }
         return new MultipartBody.Builder()
                 .setType(MediaType.parse("multipart/form-data"))
                 .addFormDataPart("_api_key", "0b9e7c7b9cf4ace8c41626f6371d2eca")
-                .addFormDataPart("appKey", "")
+                .addFormDataPart("appKey", "9a5fcfca95c4b33d378bb746b713726e")
                 .addFormDataPart("userKey", "7174de3cf30861bf6c11344996593317")
-                .addFormDataPart("buildUpdateDescription", "这是版本更新描述");
+                .addFormDataPart("buildUpdateDescription", description);
     }
 }
