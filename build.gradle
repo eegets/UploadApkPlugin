@@ -21,7 +21,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // 组件注册插件，此处的包名要和build.gradle中 'uploadArchives' 配置信息下的配置一致
-        classpath 'com.eegets.plugin:upload:1.0.0'
+        classpath 'com.eegets.plugin:upload:1.0.1'
     }
 }
 
