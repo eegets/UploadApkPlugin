@@ -37,7 +37,7 @@ object FeishuExt {
      * 第三步 发送消息到飞书智能助手
      * https://open.feishu.cn/document/ukTMukTMukTM/ucTM5YjL3ETO24yNxkjN?lang=zh-CN#4996824a
      */
-    fun pushMessageToFeishuHook(pgyerInfoBean: PgyerInfoBean) {
+    fun pushMessageToFeishuHook(feishuParams: BuildParams.Feishu, pgyerInfoBean: PgyerInfoBean) {
 
         val feishuMsgBean = JsonOutput.toJson(addRequestBean(pgyerInfoBean))
 
@@ -47,7 +47,7 @@ object FeishuExt {
 
         val request: Request = Request.Builder()
                 .header("content-type", "application/x-www-form-urlencoded")
-                .url(feishuHookUrl)
+                .url(feishuParams.hookUrl)
                 .post(requestBody)
                 .build()
         val response = OkHttpClient().newCall(request).execute()

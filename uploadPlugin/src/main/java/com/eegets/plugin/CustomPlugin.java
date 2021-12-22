@@ -3,6 +3,7 @@ package com.eegets.plugin;
 
 import com.android.build.gradle.AppExtension;
 import com.android.build.gradle.api.ApplicationVariant;
+import com.eegets.BuildParams;
 import com.eegets.plugin.task.UploadTask;
 
 import org.gradle.api.DomainObjectSet;
@@ -18,9 +19,13 @@ public class CustomPlugin implements Plugin<Project> {
 
     private String LOG_HEAD_MESSAGE = "TestGroovyPlugin + ";
 
+    private BuildParams params;
+
     @Override
     public void apply(Project project) {
         System.out.println(LOG_HEAD_MESSAGE + "Task Plugin is beginning");
+
+        params = project.getExtensions().create("buildParams", BuildParams.class, project.getObjects());
 
         project.afterEvaluate(project1 -> {
             AppExtension appExtension = (AppExtension) project1.getExtensions().findByName("android");
@@ -42,7 +47,7 @@ public class CustomPlugin implements Plugin<Project> {
         System.out.println(LOG_HEAD_MESSAGE + "variantName: " + variantName);
         if (variantName.equals("Release")) {  //在release环境下执行上传，或者是变体Release环境行执行上传
             UploadTask uploadTask = project.getTasks().create("BuildUpload" + variantName, UploadTask.class);
-            uploadTask.init(variant, project);
+            uploadTask.init(variant, params);
         } else {
             System.out.println(LOG_HEAD_MESSAGE + "variantName: is not PreviewRelease");
         }

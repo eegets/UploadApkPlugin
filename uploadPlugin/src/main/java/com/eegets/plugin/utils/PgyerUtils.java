@@ -1,5 +1,6 @@
 package com.eegets.plugin.utils;
 
+import com.eegets.BuildParams;
 import com.eegets.GsonUtls;
 import com.eegets.PgyerInfoBean;
 
@@ -36,12 +37,16 @@ public class PgyerUtils {
 
     public static final String saveImagePath = "/Users/wangkai/FlutterProjects/TestGroovyPlugin/app/build/outputs/apk/release/ImageRQ.jpg";
 
-    public String uploadApkPgyer(File apkPath, String fileName, String shortName) {
-        System.out.println(LOG_UPLOAD_TASK + " apkPath: " + apkPath + "; fileName: " + fileName + "; shortName: " + shortName);
+    public String uploadApkPgyer(BuildParams.Pgyer params, File apkPath, String fileName, String shortName) {
+        if (params == null) {
+            throw new NullPointerException("params is empty");
+        }
+        System.out.println(LOG_UPLOAD_TASK + " apkPath: " + apkPath + "; fileName: " + fileName + "; shortName: " + shortName + "pgyerBuildParams api Key: " + params.get_api_key());
 
         RequestBody fileBody = RequestBody.create(MediaType.parse("multipart/form-data'"), apkPath);
 
-        MultipartBody requestBody = addRequestBody("")
+        MultipartBody requestBody = addRequestBody(params)
+                .addFormDataPart("buildUpdateDescription", "更新内容正在开发中，敬请期待...")
                 .addFormDataPart("file", fileName, fileBody)
                 .build();
 
@@ -66,11 +71,11 @@ public class PgyerUtils {
         return responseMsg;
     }
 
-    public PgyerInfoBean getMessage() {
+    public PgyerInfoBean getMessage(BuildParams.Pgyer params) {
 
         PgyerInfoBean pgyerInfoBean = null;
 
-        MultipartBody requestBody = addRequestBody("")
+        MultipartBody requestBody = addRequestBody(params)
                 .build();
 
         Request request = new Request.Builder()
@@ -92,15 +97,11 @@ public class PgyerUtils {
         return pgyerInfoBean;
     }
 
-    private MultipartBody.Builder addRequestBody(String description) {
-        if (TextUtils.isEmpty(description)) {
-            description = "更新内容正在开发中，敬请期待...";
-        }
+    private MultipartBody.Builder addRequestBody(BuildParams.Pgyer params) {
         return new MultipartBody.Builder()
                 .setType(MediaType.parse("multipart/form-data"))
-                .addFormDataPart("_api_key", "0b9e7c7b9cf4ace8c41626f6371d2eca")
-                .addFormDataPart("appKey", "9a5fcfca95c4b33d378bb746b713726e")
-                .addFormDataPart("userKey", "7174de3cf30861bf6c11344996593317")
-                .addFormDataPart("buildUpdateDescription", description);
+                .addFormDataPart("_api_key", params.get_api_key())
+                .addFormDataPart("appKey", params.getAppKey())
+                .addFormDataPart("userKey", params.getUserKey());
     }
 }

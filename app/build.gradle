@@ -32,6 +32,18 @@ android {
     }
 }
 
+buildParams {
+    pgyer {
+        _api_key = "0b9e7c7b9cf4ace8c41626f6371d2eca"
+        appKey = "de400bcfdf46b46bbcb9f360d1e6d071"
+        userKey = "7174de3cf30861bf6c11344996593317"
+    }
+
+    feishu {
+        hookUrl = 'https://open.feishu.cn/open-apis/bot/v2/hook/2c506f22-39e9-47c4-b9bc-4ef9bddd02e9'
+    }
+}
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.4.0'

@@ -16,11 +16,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e62f9be-48bb-47fd-b452-fab05aa2cc64" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__UploadApkPlugin_uploadPlugin_uploadPlugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.2/upload-1.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.2/upload-1.0.2.jar.md5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.2/upload-1.0.2.jar.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.2/upload-1.0.2.pom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.2/upload-1.0.2.pom.md5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.2/upload-1.0.2.pom.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets/BuildParams.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
@@ -29,7 +39,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__UploadApkPlugin_uploadPlugin_uploadPlugin.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_2_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_2_4_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_1_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_4_0_aar.xml" afterDir="false" />
@@ -64,24 +73,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__gradle_installation_beacon_6_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gradle_installation_beacon_6_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__groovy_all_1_3_2_5_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__groovy_all_1_3_2_5_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_reflect_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_reflect_1_3_72.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_stdlib_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_stdlib_1_3_72.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_stdlib_common_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_stdlib_common_1_3_72.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_stdlib_jdk7_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_stdlib_jdk7_1_3_72.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_stdlib_jdk8_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__kotlin_stdlib_jdk8_1_3_72.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/uploadPlugin/UploadApkPlugin.uploadPlugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/uploadPlugin/UploadApkPlugin.uploadPlugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/google/android/material/group-index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/google/android/material/group-index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.1/upload-1.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.1/upload-1.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.1/upload-1.0.1.jar.md5" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.1/upload-1.0.1.jar.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.1/upload-1.0.1.jar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/1.0.1/upload-1.0.1.jar.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/com/eegets/plugin/upload/maven-metadata.xml.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadPlugin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/CustomPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/CustomPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/task/UploadTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/task/UploadTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/utils/PgyerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/utils/PgyerUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets/FeishuExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets/FeishuExt.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,13 +133,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="UploadApkPlugin" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="eegetspublish" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="UploadApkPlugin" type="f1a62948:ProjectNode" />
                 <item name="uploadPlugin" type="2d1252cf:ModuleNode" />
               </path>
               <path>
@@ -156,6 +155,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -166,6 +172,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../Library/Android/sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -188,7 +195,7 @@
       <recent name="$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/bean" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UploadApkPlugin:app [BuildUploadRelease]">
+  <component name="RunManager" selected="Gradle.UploadApkPlugin:uploadPlugin [uploadArchives]">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -312,9 +319,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UploadApkPlugin:uploadPlugin [uploadArchives]" />
         <item itemvalue="Gradle.UploadApkPlugin:app [BuildUploadRelease]" />
         <item itemvalue="Gradle.UploadApkPlugin:app [AppBuildUploadPlatformRelease]" />
-        <item itemvalue="Gradle.UploadApkPlugin:uploadPlugin [uploadArchives]" />
       </list>
     </recent_temporary>
   </component>
@@ -374,45 +381,73 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="151" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640164861772">
+      <screen x="0" y="25" width="1378" height="875" />
+    </state>
+    <state x="151" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1378.875@0.25.1378.875" timestamp="1640164861772" />
+    <state width="487" height="466" key="DebuggerActiveHint" timestamp="1640166897849">
+      <screen x="0" y="25" width="1378" height="875" />
+    </state>
+    <state width="487" height="466" key="DebuggerActiveHint/0.25.1378.875@0.25.1378.875" timestamp="1640166897849" />
     <state x="138" y="99" key="DiffContextDialog" timestamp="1639647523197">
       <screen x="0" y="25" width="1378" height="875" />
     </state>
     <state x="138" y="99" key="DiffContextDialog/0.25.1378.875/-2560.-420.2560.1415@0.25.1378.875" timestamp="1639647523197" />
-    <state width="1329" height="183" key="GridCell.Tab.0.bottom" timestamp="1640158153940">
+    <state width="1329" height="2" key="GridCell.Tab.0.bottom" timestamp="1640168005876">
       <screen x="0" y="25" width="1378" height="875" />
     </state>
     <state width="2516" height="343" key="GridCell.Tab.0.bottom/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639648363372" />
-    <state width="1329" height="183" key="GridCell.Tab.0.bottom/0.25.1378.875@0.25.1378.875" timestamp="1640158153940" />
+    <state width="1329" height="2" key="GridCell.Tab.0.bottom/0.25.1378.875@0.25.1378.875" timestamp="1640168005876" />
     <state width="2516" height="343" key="GridCell.Tab.0.bottom/0.25.1384.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639653015124" />
-    <state width="1329" height="183" key="GridCell.Tab.0.center" timestamp="1640158153939">
+    <state width="1329" height="2" key="GridCell.Tab.0.center" timestamp="1640168005876">
       <screen x="0" y="25" width="1378" height="875" />
     </state>
     <state width="2516" height="343" key="GridCell.Tab.0.center/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639648363371" />
-    <state width="1329" height="183" key="GridCell.Tab.0.center/0.25.1378.875@0.25.1378.875" timestamp="1640158153939" />
+    <state width="1329" height="2" key="GridCell.Tab.0.center/0.25.1378.875@0.25.1378.875" timestamp="1640168005876" />
     <state width="2516" height="343" key="GridCell.Tab.0.center/0.25.1384.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639653015123" />
-    <state width="1329" height="183" key="GridCell.Tab.0.left" timestamp="1640158153939">
+    <state width="1329" height="2" key="GridCell.Tab.0.left" timestamp="1640168005876">
       <screen x="0" y="25" width="1378" height="875" />
     </state>
     <state width="2516" height="343" key="GridCell.Tab.0.left/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639648363371" />
-    <state width="1329" height="183" key="GridCell.Tab.0.left/0.25.1378.875@0.25.1378.875" timestamp="1640158153939" />
+    <state width="1329" height="2" key="GridCell.Tab.0.left/0.25.1378.875@0.25.1378.875" timestamp="1640168005876" />
     <state width="2516" height="343" key="GridCell.Tab.0.left/0.25.1384.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639653015122" />
-    <state width="1329" height="183" key="GridCell.Tab.0.right" timestamp="1640158153940">
+    <state width="1329" height="2" key="GridCell.Tab.0.right" timestamp="1640168005876">
       <screen x="0" y="25" width="1378" height="875" />
     </state>
     <state width="2516" height="343" key="GridCell.Tab.0.right/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639648363372" />
-    <state width="1329" height="183" key="GridCell.Tab.0.right/0.25.1378.875@0.25.1378.875" timestamp="1640158153940" />
+    <state width="1329" height="2" key="GridCell.Tab.0.right/0.25.1378.875@0.25.1378.875" timestamp="1640168005876" />
     <state width="2516" height="343" key="GridCell.Tab.0.right/0.25.1384.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639653015123" />
     <state x="393" y="169" key="RollbackChangesDialog" timestamp="1639647524327">
       <screen x="0" y="25" width="1378" height="875" />
     </state>
     <state x="393" y="169" key="RollbackChangesDialog/0.25.1378.875/-2560.-420.2560.1415@0.25.1378.875" timestamp="1639647524327" />
-    <state x="379" y="217" width="615" height="490" key="find.popup" timestamp="1640157491361">
+    <state x="379" y="217" width="615" height="490" key="find.popup" timestamp="1640166290612">
       <screen x="0" y="25" width="1378" height="875" />
     </state>
-    <state x="379" y="217" width="615" height="490" key="find.popup/0.25.1378.875@0.25.1378.875" timestamp="1640157491361" />
+    <state x="379" y="217" width="615" height="490" key="find.popup/0.25.1378.875@0.25.1378.875" timestamp="1640166290612" />
     <state x="-1496" y="180" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1639535526032">
       <screen x="-2560" y="-420" width="2560" height="1415" />
     </state>
     <state x="-1496" y="180" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1378.875/-2560.-420.2560.1415@-2560.-420.2560.1415" timestamp="1639535526032" />
+    <state x="351" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1640163235829">
+      <screen x="0" y="25" width="1378" height="875" />
+    </state>
+    <state x="351" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1378.875@0.25.1378.875" timestamp="1640163235829" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/uploadPlugin/src/main/kotlin/com/eegets/FeishuExt.kt</url>
+          <line>63</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/uploadPlugin/src/main/java/com/eegets/plugin/utils/PgyerUtils.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
