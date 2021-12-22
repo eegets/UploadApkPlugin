@@ -54,6 +54,21 @@ plugins {
  */
 apply plugin: 'com.eegets.plugin'
 
+
+buildParams {
+    pgyer {
+        _api_key = "0b9e7c7b9cf4ace8c41626f6371d2eca" //替换为自己的apiKey， 通过蒲公英提供的文档生成
+        appKey = "de400bcfdf46b46bbcb9f360d1e6d071"。 //替换为自己的应用的appKey
+        userKey = "7174de3cf30861bf6c11344996593317"。//替换为自己的用户Key
+    }
+
+    feishu {
+		//替换为自己的飞书机器人的hookUrl地址
+		hookUrl = 'https://open.feishu.cn/open-apis/bot/v2/hook/2c506f22-39e9-47c4-b9bc-4ef9bddd02e9'
+    }
+}
+
+
 android {
    ...
 }
@@ -61,31 +76,6 @@ android {
 dependencies {
 	...
 }
-```
-
-5. 修改`uploadPlugin`下的`PgyerUtils.java`中的参数信息，如下代码：
-```java
-	 private MultipartBody.Builder addRequestBody(String description) {
-        if (TextUtils.isEmpty(description)) {
-            description = "更新内容正在开发中，敬请期待...";
-        }
-        return new MultipartBody.Builder()
-                .setType(MediaType.parse("multipart/form-data"))
-                .addFormDataPart("_api_key", "0b9e7c7b9cf4ace8c41626f6371d2eca")
-                .addFormDataPart("appKey", "9a5fcfca95c4b33d378bb746b713726e")
-                .addFormDataPart("userKey", "7174de3cf30861bf6c11344996593317")
-                .addFormDataPart("buildUpdateDescription", description);
-    }
-
-```
-
-5. 修改`uploadPlugin`下的`FeishuExt.kt`中的`feishuHookUrl`参数信息，如下代码：
-```kotlin
- /**
-     * 飞书hook接口，可修改为自己飞书群机器人的hook地址
-     */
-    private const val feishuHookUrl = "https://open.feishu.cn/open-apis/bot/v2/hook/2c506f22-39e9-47c4-b9bc-4ef9bddd02e9"
-
 ```
 
 ## 运行
