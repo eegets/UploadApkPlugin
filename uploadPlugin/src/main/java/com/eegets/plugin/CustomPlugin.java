@@ -41,7 +41,7 @@ public class CustomPlugin implements Plugin<Project> {
         String variantName = variant.getName().substring(0, 1).toUpperCase() + variant.getName().substring(1);
         System.out.println(LOG_HEAD_MESSAGE + "variantName: " + variantName);
         if (variantName.equals("Release")) {  //在release环境下执行上传，或者是变体Release环境行执行上传
-            UploadTask uploadTask = project.getTasks().create("AppBuildUploadPlatform" + variantName, UploadTask.class);
+            UploadTask uploadTask = project.getTasks().create("BuildUpload" + variantName, UploadTask.class);
             uploadTask.init(variant, project);
         } else {
             System.out.println(LOG_HEAD_MESSAGE + "variantName: is not PreviewRelease");

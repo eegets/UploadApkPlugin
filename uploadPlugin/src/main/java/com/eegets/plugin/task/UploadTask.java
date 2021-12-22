@@ -38,7 +38,7 @@ public class UploadTask extends DefaultTask {
         System.out.println(LOG_UPLOAD_TASK + "init");
 
 //        setDescription("tools of upload to third platform");
-        setGroup("publishToThirdPlatform");
+        setGroup("eegetsPublish");
 
         for (BaseVariantOutput output: variant.getOutputs()) {
             File apkDir = output.getOutputFile();

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: UploadApkPlugin.uploadPlugin.uploadPlugin">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/uploadPlugin/build/libs/uploadPlugin.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
