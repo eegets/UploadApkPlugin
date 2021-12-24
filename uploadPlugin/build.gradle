@@ -44,7 +44,7 @@ uploadArchives {
             //设置插件的GAV参数
             pom.groupId = 'com.eegets.plugin'
             pom.artifactId = 'upload'
-            pom.version = '1.0.3'
+            pom.version = '1.0.4'
 
             //文件发布到下面目录
             repository(url: uri('../plugin'))
