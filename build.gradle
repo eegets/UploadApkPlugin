@@ -7,13 +7,13 @@ buildscript {
     repositories {
         google()
         jcenter()
-
         maven {
             url uri("./plugin")
         }
+        mavenCentral()
 
         // gradle plugins 插件maven
-        maven { url "https://plugins.gradle.org/m2/" }
+//        maven { url "https://plugins.gradle.org/m2/" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$build_gradle_version"
@@ -29,6 +29,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
 }
 

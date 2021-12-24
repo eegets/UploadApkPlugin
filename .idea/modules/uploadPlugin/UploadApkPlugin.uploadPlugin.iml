@@ -62,6 +62,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Gradle: UploadApkPlugin.uploadPlugin.uploadPlugin" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: UploadApkPlugin.uploadPlugin.uploadPlugin-sources" level="project" />
     <orderEntry type="library" name="Gradle: com.android.tools.build:gradle:4.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:4.9.0" level="project" />
     <orderEntry type="library" name="Gradle: net.glxn.qrgen:javase:2.0" level="project" />
