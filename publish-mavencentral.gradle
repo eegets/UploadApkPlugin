@@ -3,10 +3,17 @@ apply plugin: 'signing'
 
 task androidSourcesJar(type: Jar) {
     classifier = 'sources'
-
+//    from android.sourceSets.main.java.sourceFiles
     exclude "**/R.class"  //排除`R.class`
     exclude "**/BuildConfig.class"  //排除`BuildConfig.class`
 }
+
+//将文档打包成jar，因为nexus发布如果不包含javadoc的话是无法发布成功的，具体看：
+//https://issues.sonatype.org/browse/OSSRH-52090?jql=text%20~%20%22Missing%3A%20no%20javadoc%20jar%20found%20in%20folder%22
+task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+    archiveClassifier.set('javadoc')
+}
+
 //第 1 处
 ext["signing.keyId"] = '' //签名的密钥后8位
 ext["signing.password"] = ''  //签名设置的密码
@@ -38,7 +45,8 @@ publishing {
 
             // Two artifacts, the `aar` and the sources
             artifact("../plugin/com/eegets/plugin/upload/${PUBLISH_VERSION}/upload-${PUBLISH_VERSION}.jar")
-            artifact androidSourcesJar
+            artifact androidSourcesJar  //将源码打包进aar，如果不需要可以去掉
+            artifact androidJavadocsJar //将注释打包进aar，如果不需要可以去掉
 
             // Self-explanatory metadata for the most part
             pom {

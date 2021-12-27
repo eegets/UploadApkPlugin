@@ -7,7 +7,7 @@ plugins {
 //此处的ext和'apply from: '../publish-mavencentral.gradle''顺序一定不能乱，必须是先定义ext，然后在apply from
 ext {
     PUBLISH_ARTIFACT_ID = "uploadPlugin" //你的artifact_id，一般是module的名字
-    PUBLISH_VERSION = "1.0.3"  //发布版本号
+    PUBLISH_VERSION = "1.0.4"  //发布版本号
     PUBLISH_GROUP_ID = 'io.github.eegets'  //你的sonatype的group_id
 }
 apply from: '../publish-mavencentral.gradle'
